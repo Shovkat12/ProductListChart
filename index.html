@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+  <title>Product list with cart</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="./css/main.css">
+</head>
+
+<body>
+
+  <!-- <div class="site-main-modal main-modal">
+    <div class="main-modal-card modal-card">
+      <img src="./assets/images/icon-order-confirmed.svg" alt="" class="modal-card-img">
+      <h3 class="modal-card-headline">Order Confirmed</h3>
+      <p class="modal-card-text">We hope you enjoy your food!</p>
+      <div class="cart-active-list active-list padding">
+      </div>
+      <div class="cart-active-total active-total padding">
+        <p class="active-total-text">Order Total</p>
+        <p class="active-total-price">$<span class="total-price-number">0</span></p>
+      </div>
+      <button class="modal-card-btn">Start New Order</button>
+    </div>
+  </div> -->
+  </div>
+  <main class="site-main container">
+      <section class="site-main-list main-list">
+        <h1 class="main-list-headline">Desserts</h1>
+        <div class="main-list-desserts list-desserts">
+          <div class="list-desserts-item desserts-item" id="WaffleBerries">
+            <picture class="desserts-item_picture" style="border-radius: 8px;">
+              <source media="(min-width:991px)" srcset="./assets/images/image-waffle-desktop.jpg">
+              <source media="(min-width:768px)" srcset="./assets/images/image-waffle-tablet.jpg">
+              <source media="(min-width:320px)" srcset="./assets/images/image-waffle-mobile.jpg">
+              <img src="./assets/images/image-baklava-desktop.jpg" alt="Flowers" class="item_picture_img">
+            </picture>
+            <div class="desserts-item_btn item_btn">
+              <div class="item-btn-active btn-active"><div class="btn-active-background nonactive"></div><button class="btn-active-btn minus" disabled="true">-</button><p class="btn-active-count">0</p><button class="btn-active-btn plus" disabled="true">+</button></div>
+              <div class="item-btn-nonactive active click"><img class="item_btn_img" src="./assets/images/icon-add-to-cart.svg" alt="">Add to Cart</div>
+            </div>
+            <div class="desserts-item_content item-content">
+              <p class="item-content-category">Waffle</p>
+              <p class="item-content-name">Waffle with Berries</p>
+              <span class="item-content-price">$6.50</span>
+          </div>
+          </div>
+          <div class="list-desserts-item desserts-item" id="CremeBrulee">
+            <picture class="desserts-item_picture" style="border-radius: 8px;">
+              <source media="(min-width:991px)" srcset="./assets/images/image-creme-brulee-desktop.jpg">
+              <source media="(min-width:768px)" srcset="./assets/images/image-creme-brulee-tablet.jpg">
+              <source media="(min-width:320px)" srcset="./assets/images/image-creme-brulee-mobile.jpg">
+              <img src="./assets/images/image-creme-brulee-desktop.jpg" alt="Flowers" class="item_picture_img">
+            </picture>
+            <div class="desserts-item_btn item_btn">
+              <div class="item-btn-active btn-active"><div class="btn-active-background nonactive"></div><button class="btn-active-btn minus" disabled="true">-</button><p class="btn-active-count">0</p><button class="btn-active-btn plus" disabled="true">+</button></div>
+              <div class="item-btn-nonactive active click"><img class="item_btn_img" src="./assets/images/icon-add-to-cart.svg" alt="">Add to Cart</div>
+            </div>
+            <div class="desserts-item_content item-content">
+              <p class="item-content-category">Crème Brûlée</p>
+              <p class="item-content-name">Vanilla Bean Crème Brûlée</p>
+              <span class="item-content-price">$7.00</span>
+          </div>
+          </div>
+          <div class="list-desserts-item desserts-item" id="MacaronFive">
+            <picture class="desserts-item_picture" style="border-radius: 8px;">
+              <source media="(min-width:991px)" srcset="./assets/images/image-macaron-desktop.jpg">
+              <source media="(min-width:768px)" srcset="./assets/images/image-macaron-tablet.jpg">
+              <source media="(min-width:320px)" srcset="./assets/images/image-macaron-mobile.jpg">
+              <img src="./assets/images/./assets/images/image-macaron-desktop.jpg" alt="Flowers" class="item_picture_img">
+            </picture>
+            <div class="desserts-item_btn item_btn">
+              <div class="item-btn-active btn-active"><div class="btn-active-background nonactive"></div><button class="btn-active-btn minus" disabled="true">-</button><p class="btn-active-count">0</p><button class="btn-active-btn plus" disabled="true">+</button></div>
+              <div class="item-btn-nonactive active click"><img class="item_btn_img" src="./assets/images/icon-add-to-cart.svg" alt="">Add to Cart</div>
+            </div>
+            <div class="desserts-item_content item-content">
+              <p class="item-content-category">Macaron</p>
+              <p class="item-content-name">Macaron Mix of Five</p>
+              <span class="item-content-price">$8.00</span>
+          </div>
+          </div>
+          <div class="list-desserts-item desserts-item" id="ClassicTiramisu">
+            <picture class="desserts-item_picture" style="border-radius: 8px;">
+              <source media="(min-width:991px)" srcset="./assets/images/image-tiramisu-desktop.jpg">
+              <source media="(min-width:768px)" srcset="./assets/images/image-tiramisu-tablet.jpg">
+              <source media="(min-width:320px)" srcset="./assets/images/image-tiramisu-mobile.jpg">
+              <img src="./assets/images/image-tiramisu-desktop.jpg" alt="Flowers" class="item_picture_img">
+            </picture>
+            <div class="desserts-item_btn item_btn">
+              <div class="item-btn-active btn-active"><div class="btn-active-background nonactive"></div><button class="btn-active-btn minus" disabled="true">-</button><p class="btn-active-count">0</p><button class="btn-active-btn plus" disabled="true">+</button></div>
+              <div class="item-btn-nonactive active click"><img class="item_btn_img" src="./assets/images/icon-add-to-cart.svg" alt="">Add to Cart</div>
+            </div>
+            <div class="desserts-item_content item-content">
+              <p class="item-content-category">Tiramisu</p>
+              <p class="item-content-name">Classic Tiramisu</p>
+              <span class="item-content-price">$5.50</span>
+          </div>
+          </div>
+          <div class="list-desserts-item desserts-item" id="PistachoBaklava">
+            <picture class="desserts-item_picture" style="border-radius: 8px;">
+              <source media="(min-width:991px)" srcset="./assets/images/image-baklava-desktop.jpg">
+              <source media="(min-width:768px)" srcset="./assets/images/image-baklava-tablet.jpg">
+              <source media="(min-width:320px)" srcset="./assets/images/image-baklava-mobile.jpg">
+              <img src="./assets/images/image-baklava-desktop.jpg" alt="Flowers" class="item_picture_img">
+            </picture>
+            <div class="desserts-item_btn item_btn">
+              <div class="item-btn-active btn-active"><div class="btn-active-background nonactive"></div><button class="btn-active-btn minus" disabled="true">-</button><p class="btn-active-count">0</p><button class="btn-active-btn plus" disabled="true">+</button></div>
+              <div class="item-btn-nonactive active click"><img class="item_btn_img" src="./assets/images/icon-add-to-cart.svg" alt="">Add to Cart</div>
+            </div>
+            <div class="desserts-item_content item-content">
+              <p class="item-content-category">Baklava</p>
+              <p class="item-content-name">Pistachio Baklava</p>
+              <span class="item-content-price">$4.00</span>
+          </div>
+          </div>
+          <div class="list-desserts-item desserts-item" id="LemonPie">
+            <picture class="desserts-item_picture" style="border-radius: 8px;">
+              <source media="(min-width:991px)" srcset="./assets/images/image-meringue-desktop.jpg">
+              <source media="(min-width:768px)" srcset="./assets/images/image-meringue-tablet.jpg">
+              <source media="(min-width:320px)" srcset="./assets/images/image-meringue-mobile.jpg">
+              <img src="./assets/images/image-meringue-desktop.jpg" alt="Flowers" class="item_picture_img">
+            </picture>
+            <div class="desserts-item_btn item_btn">
+              <div class="item-btn-active btn-active"><div class="btn-active-background nonactive"></div><button class="btn-active-btn minus" disabled="true">-</button><p class="btn-active-count">0</p><button class="btn-active-btn plus" disabled="true">+</button></div>
+              <div class="item-btn-nonactive active click"><img class="item_btn_img" src="./assets/images/icon-add-to-cart.svg" alt="">Add to Cart</div>
+            </div>
+            <div class="desserts-item_content item-content">
+              <p class="item-content-category">Pie</p>
+              <p class="item-content-name">Lemon Meringue Pie</p>
+              <span class="item-content-price">$5.00</span>
+          </div>
+          </div>
+          <div class="list-desserts-item desserts-item" id="RedCake">
+            <picture class="desserts-item_picture" style="border-radius: 8px;">
+              <source media="(min-width:991px)" srcset="./assets/images/image-cake-desktop.jpg">
+              <source media="(min-width:768px)" srcset="./assets/images/image-cake-tablet.jpg">
+              <source media="(min-width:320px)" srcset="./assets/images/image-cake-mobile.jpg">
+              <img src="./assets/images/image-cake-desktop.jpg" alt="Flowers" class="item_picture_img">
+            </picture>
+            <div class="desserts-item_btn item_btn">
+              <div class="item-btn-active btn-active"><div class="btn-active-background nonactive"></div><button class="btn-active-btn minus" disabled="true">-</button><p class="btn-active-count">0</p><button class="btn-active-btn plus" disabled="true">+</button></div>
+              <div class="item-btn-nonactive active click"><img class="item_btn_img" src="./assets/images/icon-add-to-cart.svg" alt="">Add to Cart</div>
+            </div>
+            <div class="desserts-item_content item-content">
+              <p class="item-content-category">Cake</p>
+              <p class="item-content-name">Red Velvet Cake</p>
+              <span class="item-content-price">$4.50</span>
+          </div>
+          </div>
+          <div class="list-desserts-item desserts-item" id="SaltedBrownie">
+            <picture class="desserts-item_picture" style="border-radius: 8px;">
+              <source media="(min-width:991px)" srcset="./assets/images/image-brownie-desktop.jpg">
+              <source media="(min-width:768px)" srcset="./assets/images/image-brownie-tablet.jpg">
+              <source media="(min-width:320px)" srcset="./assets/images/image-brownie-mobile.jpg">
+              <img src="./assets/images/image-brownie-desktop.jpg" alt="Flowers" class="item_picture_img">
+            </picture>
+            <div class="desserts-item_btn item_btn">
+              <div class="item-btn-active btn-active"><div class="btn-active-background nonactive"></div><button class="btn-active-btn minus" disabled="true">-</button><p class="btn-active-count">0</p><button class="btn-active-btn plus" disabled="true">+</button></div>
+              <div class="item-btn-nonactive active click"><img class="item_btn_img" src="./assets/images/icon-add-to-cart.svg" alt="">Add to Cart</div>
+            </div>
+            <div class="desserts-item_content item-content">
+              <p class="item-content-category">Brownie</p>
+              <p class="item-content-name">Salted Caramel Brownie</p>
+              <span class="item-content-price">$5.50</span>
+          </div>
+          </div>
+          <div class="list-desserts-item desserts-item" id="VanillaCotta">
+            <picture class="desserts-item_picture" style="border-radius: 8px;">
+              <source media="(min-width:991px)" srcset="./assets/images/image-panna-cotta-desktop.jpg">
+              <source media="(min-width:768px)" srcset="./assets/images/image-panna-cotta-tablet.jpg">
+              <source media="(min-width:320px)" srcset="./assets/images/image-panna-cotta-mobile.jpg">
+              <img src="./assets/images/image-panna-cotin-desktop.jpg" alt="Flowers" class="item_picture_img">
+            </picture>
+            <div class="desserts-item_btn item_btn">
+              <div class="item-btn-active btn-active"><div class="btn-active-background nonactive"></div><button class="btn-active-btn minus" disabled="true">-</button><p class="btn-active-count">0</p><button class="btn-active-btn plus" disabled="true">+</button></div>
+              <div class="item-btn-nonactive active click"><img class="item_btn_img" src="./assets/images/icon-add-to-cart.svg" alt="">Add to Cart</div>
+            </div>
+            <div class="desserts-item_content item-content">
+              <p class="item-content-category">Panna Cotta</p>
+              <p class="item-content-name">Vanilla Panna Cotta</p>
+              <span class="item-content-price">$6.50</span>
+          </div>
+          </div>
+      </section>
+      <div class="site-main-cart main-cart">
+        <h3 class="cart-nonactive-headline">Your Cart (<span class="headline-count">0</span>)</h3>
+        <div class="main-cart-nonactive cart-nonactive" >
+          <div class="cart-nonactive-content cart-content">
+            <img src="./assets/images/illustration-empty-cart.svg" alt="" class="cart-content-img">
+            <p class="cart-content-text">Your added items will appear here</p>
+          </div>
+        </div>
+        <div class="main-cart-active cart-active" style="display: none;" >
+          <div class="cart-active-list active-list">
+          </div>
+          <div class="cart-active-total active-total">
+            <p class="active-total-text">Order Total</p>
+            <p class="active-total-price">$<span class="total-price-number">0</span></p>
+          </div>
+          <p class="cart-active-feature"><img src="./assets/images/icon-carbon-neutral.svg" alt="" class="active-feature-icon">This is a<span class="active-feature-span">carbon-neutral</span> delivery</p>
+          <button class="cart-active-btn">Confirm Order</button>
+        </div>
+      </div>  
+  </main>
+  <script src="./js/main.js"></script>
+</body>
+</html>
